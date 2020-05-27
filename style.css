@@ -1,5 +1,14 @@
 .title
 {
+	  opacity: 1;
+	  animation-name: fadeInOpacity;
+	  animation-iteration-count: 1;
+  	animation-timing-function: ease-in;
+  	animation-duration: 3s;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-size: 1.25vw;
 
     text-align: center;
     width: 25%;
@@ -13,7 +22,80 @@
         black, 
         rgba(75, 75, 75)
       ) 1 100%;
+      
+}
 
+a:visited { text-decoration: none; color: black; }
+a:hover { text-decoration: none; color:black; }
+a:focus { text-decoration: none; color:black; }
+a:hover, a:active { text-decoration: none; color:black }
+
+@keyframes fadeInOpacity 
+{
+  0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.sub 
+{
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 8px;
+  font-size: 0.75vw;
+
+  text-align: center;
+  width: 12%;
+  margin: auto;
+  right: 20%;
+
+  position: absolute;
+
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      black, 
+      rgba(75, 75, 75)
+    ) 1 100%;
+}
+
+.sub2
+{
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 8px;
+  font-size: 0.75vw;
+
+  text-align: center;
+  width: 12%;
+  margin: auto;
+  left: 20%;
+
+  position: absolute;
+
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      black, 
+      rgba(75, 75, 75)
+    ) 1 100%;
 }
 
 .learned
@@ -22,12 +104,15 @@
     text-align: center;
     margin: auto;
     font-size: 20px;
-    background: rgb(0, 0, 0, 0.45);
+    font-size: 1vw;
+    background: rgb(0, 0, 0, 0.35);
     padding-left:10px;
     padding-right:10px;
     padding-top: 4px;
     padding-bottom: 4px;
-}
+
+    border: rgb(0, 0, 0, 0);
+    border-radius: 25px;}
 
 body
 {
